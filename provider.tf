@@ -6,9 +6,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket  = "pedrobucket26"
+    bucket  = var.bucket
     key     = "terraform-test.tfstate"
-    region  = "us-east-2"
+    region  = var.region
     encrypt = true
   }
   # request_timeout = "600s"

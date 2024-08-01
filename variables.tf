@@ -1,30 +1,27 @@
 ####NET CONFIGURATION
 
       variable "vpc" {
-        default     = "192.168.0.0/16"
         description = "Set VCN IP"
       }
 
       variable "public_subnet" {
-        default     = "192.168.30.0/24"
         description = "Set Subnet Public"
       }
 
       variable "netprivate" {
-        default     = "192.168.40.0/24"
         description = "Set subnet Private"
       }
 
       variable "cluster_name" {
-        default = "NomedoClusterTeste"
+        description  = "NomedoClusterTeste"
       }
 
       variable "task_definition_family" {
-        default = "my-task-def" # Nome da definição de tarefa ECS
+        description = "Nome da Tarefa"
       }
 
       variable "service_name" {
-        default = "my-ecs-service" # Nome do serviço ECS
+        description = "Nome do servico"
       }
 
 
